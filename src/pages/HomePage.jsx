@@ -15,9 +15,9 @@ const HomePage = () => {
                         <a className="navbar-itens" href="">Contato</a>
                     </ul>
                 </div>
-                <div>
-                    <h1>Imagem 
-                    </h1>
+                <div className="home" >
+                    <img className="imghome" src="./images/img_eletrica1.png" alt="sombra da imagem principal" />
+                    <img className="imgsombra" src="./images/rect-sombra.png" alt="imagem principal" />
                 </div>
             </div>
         </>
