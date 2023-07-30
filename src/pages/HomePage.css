@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap');
 
-.navitens{
+.navitens {
     border-radius: 50px;
     background: linear-gradient(180deg, #0459BC 0%, #0490BC 100%);
     width: 45rem;
@@ -22,8 +22,10 @@
         height: 1.8rem;
         bottom: 1.3rem;
 }
+
 }
-.containerLogo{
+
+.containerLogo {
     background: #FECA32;
     width: 100%;
     height: 6em;
@@ -32,16 +34,10 @@
     justify-content: center;
     padding: 0 0 1.4rem 0;
 
-    @media only screen and (max-width: 768px) {
-        height: 4em;
-        padding: 0 0 1.7rem 0 ;
-    }
-    @media only screen and (max-width: 480px) {
-        height: 2em;
-        padding: 0 0 1.2rem 0;
-    }
+    
 }
-.navbar-itens{
+
+.navbar-itens {
     text-decoration: none;
     padding: 0 2.5rem 0 2.5rem;
     font-size:1em ;
@@ -66,18 +62,11 @@
     }
 }
 
-.logonav{
+.logonav {
     width: 10rem;
     height: 3rem;
-    @media only screen and (max-width: 768px) {
-        width: 5.5rem;
-        height: 1.8rem;
-    }
-    @media only screen and (max-width: 480px) {
-        width: 3.5rem;
-        height: 1rem;
-    }
 }
+
 .containerhome {
     display: flex;
     align-items: center;
@@ -85,7 +74,7 @@
     justify-content: center;
 }
 
-.home{
+.home {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -99,45 +88,16 @@
     }
 }
 
-.imghome {
-    display: none;
+body {
+    background-image: url("../../public/images/img-e-sombra.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-.img-home-cel {
-    display: block;
-}
-
-@media(min-width: 600px)
-{
-    .imghome {
-        display: block;
-    }
-    
-    .img-home-cel {
-        display: none;
-    }
-}
-
-.text-home h1 {
-    font-family: HIND;
-    font-weight: 600;
-    font-size: 3em;
-    color: white;
-}
-.text-home {
-    text-align: start;
-    position: relative;
-    bottom: 28rem;
-    left: 5%;
-    font-size: 1em;
-    @media only screen and (max-width:480px) {
-        bottom: 2rem;
-        font-size: 0.2rem;
-    }
-
-    @media only screen and (max-width: 768px) {
-        bottom: 18rem;
-        font-size: 0.6em;
+@media(max-width: 750px){
+    body {
+        background-image: url("../../public/images/img-home-celular.png");
     }
 }
 
@@ -167,4 +127,5 @@
 .home h2 span {
     color: #FFB800;
 }
+
 

@@ -16,10 +16,9 @@ const HomePage = () => {
                     </ul>
                 </div>
                 <div className="home" >
-                    <img className="imghome" src="./images/img-e-sombra.png" alt="sombra da imagem principal" />
-                    <img className="img-home-cel" src="./images/img-home-celular.png" alt="imagem principal" />
+                    
 
-                    <h1>
+                    <h1> 
                         <span>OPTIMIZANDO</span> ELÉTRICAS <br></br> CORPORATIVAS
                     </h1>
 
