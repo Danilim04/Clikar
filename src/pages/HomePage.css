@@ -47,15 +47,25 @@
     font-size:1em ;
     color: rgba(248, 248, 248, 0.97);
     font-family: Hind;
-    @media only screen and (max-width: 768px) {
-        padding: 0 1rem 0 1rem;
+
+}
+
+@media(max-width: 770px)
+{
+    .navbar-itens {
+        padding: 0 0.5em 0 0.5em;
         font-size: 1.5em;
     }
-    @media only screen and (max-width: 480px) {
-        padding: 0 0.5rem 0 0.5rem;
-        font-size: 0.8em;
+}
+
+@media(max-width: 385px)
+{
+    .navbar-itens {
+        padding: 0 0.5em 0 0.5em;
+        font-size: 1em;
     }
 }
+
 .logonav{
     width: 10rem;
     height: 3rem;
@@ -88,6 +98,26 @@
         bottom: 2rem;
     }
 }
+
+.imghome {
+    display: none;
+}
+
+.img-home-cel {
+    display: block;
+}
+
+@media(min-width: 600px)
+{
+    .imghome {
+        display: block;
+    }
+    
+    .img-home-cel {
+        display: none;
+    }
+}
+
 .text-home h1 {
     font-family: HIND;
     font-weight: 600;
