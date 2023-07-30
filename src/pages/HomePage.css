@@ -140,3 +140,31 @@
         font-size: 0.6em;
     }
 }
+
+.home h1 {
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 8.438rem;
+    color: white;
+    font-family: 'Hind', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 3rem); 
+}
+
+.home h1 span {
+    color: #FFB800;
+}
+
+.home h2 {
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 8.438rem;
+    color: white;
+    font-family: 'Hind', sans-serif;
+    font-size: clamp(1rem, 2vw, 3rem); 
+
+}
+
+.home h2 span {
+    color: #FFB800;
+}
+

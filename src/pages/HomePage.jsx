@@ -18,8 +18,20 @@ const HomePage = () => {
                 <div className="home" >
                     <img className="imghome" src="./images/img-e-sombra.png" alt="sombra da imagem principal" />
                     <img className="img-home-cel" src="./images/img-home-celular.png" alt="imagem principal" />
+
+                    <h1>
+                        <span>OPTIMIZANDO</span> ELÉTRICAS <br></br> CORPORATIVAS
+                    </h1>
+
+                    <h2>
+                        ELETRICISTAS ESPECIALIZADOS <br></br> EM <span>SOLUÇÕES CORPORATIVAS</span>
+                    </h2>
+
+                    
                 </div>
             </div>
+            
+
         </>
     )
 }
