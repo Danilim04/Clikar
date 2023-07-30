@@ -15,10 +15,11 @@ const HomePage = () => {
                         <a className="navbar-itens" href="">Contato</a>
                     </ul>
                 </div>
-                <div className="home" >
-                    <img className="imghome" src="./images/img_eletrica1.png" alt="sombra da imagem principal" />
-                    <img className="imgsombra" src="./images/rect-sombra.png" alt="imagem principal" />
-                </div>
+                <figure className="home" >
+                    
+                        <img  src="./images/img-e-sombra.png" alt="sombra da imagem principal" />
+                    
+                </figure>
             </div>
         </>
     )
