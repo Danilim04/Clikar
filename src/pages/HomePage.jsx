@@ -4,7 +4,7 @@ import "./HomePage.css"
 const HomePage = () => {
     return (
         <>
-            <div className="navbar">
+            <div className="containerhome">
                 <div className='containerLogo' > <img className="logonav" src="./images/logoBrancaJPG.jpg" alt="Logo clikar" /> </div>
                 <div className="navitens">
                     <ul>
@@ -16,9 +16,7 @@ const HomePage = () => {
                     </ul>
                 </div>
                 <figure className="home" >
-                    
-                        <img  src="./images/img-e-sombra.png" alt="sombra da imagem principal" />
-                    
+                    <img className="imghome" src="./images/img-e-sombra.png" alt="sombra da imagem principal" />
                 </figure>
             </div>
         </>

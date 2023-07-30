@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap');
 
-
 .navitens{
     border-radius: 50px;
     background: linear-gradient(180deg, #0459BC 0%, #0490BC 100%);
-    width: 60rem;
+    width: 45rem;
     height: 4rem;
     display: flex;
     align-items: center;
@@ -12,6 +11,17 @@
     position: relative;
     z-index: 2;
     bottom: 2rem;
+    @media only screen and (max-width: 768px) {
+        width: 70%;
+        height: 3rem;
+        font-size: 0.5em;
+    
+    }
+    @media only screen and (max-width: 480px) {
+        width: 70%;
+        height: 1.8rem;
+        bottom: 1.3rem;
+}
 }
 .containerLogo{
     background: #FECA32;
@@ -20,31 +30,83 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 0 25px 0;
+    padding: 0 0 1.4rem 0;
+
+    @media only screen and (max-width: 768px) {
+        height: 4em;
+        padding: 0 0 1.7rem 0 ;
+    }
+    @media only screen and (max-width: 480px) {
+        height: 2em;
+        padding: 0 0 1.2rem 0;
+    }
 }
 .navbar-itens{
     text-decoration: none;
-    padding: 0 4rem 0 4rem;
+    padding: 0 2.5rem 0 2.5rem;
     font-size:1em ;
     color: rgba(248, 248, 248, 0.97);
     font-family: Hind;
+    @media only screen and (max-width: 768px) {
+        padding: 0 1rem 0 1rem;
+        font-size: 1.5em;
+    }
+    @media only screen and (max-width: 480px) {
+        padding: 0 0.5rem 0 0.5rem;
+        font-size: 0.8em;
+    }
 }
 .logonav{
     width: 10rem;
     height: 3rem;
+    @media only screen and (max-width: 768px) {
+        width: 5.5rem;
+        height: 1.8rem;
+    }
+    @media only screen and (max-width: 480px) {
+        width: 3.5rem;
+        height: 1rem;
+    }
 }
-.navbar{
+.containerhome {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
+
 .home{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50rem;
     position: relative;
     bottom: 4rem;
+    @media only screen and (max-width: 768px) {
+        bottom: 3rem;
+    }
+    @media only screen and (max-width: 480px) {
+        bottom: 2rem;
+    }
 }
+.text-home h1 {
+    font-family: HIND;
+    font-weight: 600;
+    font-size: 3em;
+    color: white;
+}
+.text-home {
+    text-align: start;
+    position: relative;
+    bottom: 28rem;
+    left: 5%;
+    font-size: 1em;
+    @media only screen and (max-width:480px) {
+        bottom: 2rem;
+        font-size: 0.2rem;
+    }
 
+    @media only screen and (max-width: 768px) {
+        bottom: 18rem;
+        font-size: 0.6em;
+    }
+}
