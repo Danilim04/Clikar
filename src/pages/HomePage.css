@@ -144,8 +144,8 @@ body {
 @media(max-width: 800px){
     
     .home h2 {
-        font-size: 6vw;
-        margin-top: 50vw;
+        font-size: 5vw;
+        margin-top: 45vw;
         margin-left: 7vw;
     }
 }
