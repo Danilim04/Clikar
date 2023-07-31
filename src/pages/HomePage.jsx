@@ -17,7 +17,6 @@ const HomePage = () => {
                 </div>
                 <div className="home" >
                     
-
                     <h1> 
                         <span>OPTIMIZANDO</span> ELÉTRICAS <br></br> CORPORATIVAS
                     </h1>
@@ -28,6 +27,11 @@ const HomePage = () => {
 
                     
                 </div>
+
+                <div className="clientbar">
+
+                </div>
+
             </div>
             
 
