@@ -65,6 +65,8 @@
 .logonav {
     width: 10rem;
     height: 3rem;
+    margin-bottom: 12px;
+
 }
 
 .containerhome {
@@ -95,7 +97,7 @@ body {
 
 }
 
-@media(max-width: 750px){
+@media(max-width: 800px){
     body {
         background-image: url("../../public/images/img-home-celular.png");
     }
@@ -103,24 +105,35 @@ body {
 
 .home h1 {
     position: absolute;
-    margin-top: 20vh;
+    margin-top: 10vw;
     margin-left: 8.438rem;
     color: white;
     font-family: 'Hind', sans-serif;
-    font-size: clamp(1.5rem, 3vw, 3rem); 
+    font-size: clamp(1.5vw, 3vw, 3vw); 
 }
 
 .home h1 span {
     color: #FFB800;
 }
 
+
+@media(max-width: 800px){
+    .home h1 {
+        font-size: 7vw;
+        
+    }
+
+    
+
+}
+
 .home h2 {
     position: absolute;
-    margin-top: 50vh;
+    margin-top: 22vw;
     margin-left: 8.438rem;
     color: white;
     font-family: 'Hind', sans-serif;
-    font-size: clamp(1rem, 2vw, 3rem); 
+    font-size: clamp(1vw, 2vw, 3vw); 
 
 }
 
@@ -128,4 +141,11 @@ body {
     color: #FFB800;
 }
 
+@media(max-width: 800px){
+    
+    .home h2 {
+        font-size: 6vw;
+        margin-top: 50vw;
+    }
+}
 
