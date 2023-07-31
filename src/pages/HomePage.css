@@ -11,19 +11,26 @@
     position: relative;
     z-index: 2;
     bottom: 2rem;
-    @media only screen and (max-width: 768px) {
-        width: 70%;
-        height: 3rem;
-        font-size: 0.5em;
-    
-    }
-    @media only screen and (max-width: 480px) {
-        width: 70%;
-        height: 1.8rem;
-        bottom: 1.3rem;
 }
 
-}
+    @media(max-width: 768px) {
+        
+        .navitens {
+            width: 70%;
+            height: 3rem;
+            font-size: 0.5em;
+        }
+    }
+
+    @media(max-width: 480px) {
+        
+        .navitens {
+            width: 70%;
+            height: 1.8rem;
+            bottom: 1.3rem;
+        }
+    }
+
 
 .containerLogo {
     background: #FECA32;
@@ -82,13 +89,22 @@
     width: 100%;
     position: relative;
     bottom: 4rem;
-    @media only screen and (max-width: 768px) {
-        bottom: 3rem;
-    }
-    @media only screen and (max-width: 480px) {
-        bottom: 2rem;
-    }
 }
+
+    @media(max-width: 768px) {
+        
+        .home {
+            bottom: 3rem;
+        }
+    }
+
+    @media(max-width: 480px) {
+
+        .home {
+            bottom: 2rem;
+        }
+    }
+
 
 body {
     background-image: url("../../public/images/img-e-sombra.png");
@@ -98,6 +114,7 @@ body {
 }
 
 @media(max-width: 800px){
+
     body {
         background-image: url("../../public/images/img-home-celular.png");
     }
@@ -118,6 +135,7 @@ body {
 
 
 @media(max-width: 800px){
+
     .home h1 {
         font-size: 7vw;
         margin-left: 7vw;
