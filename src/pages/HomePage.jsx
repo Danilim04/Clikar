@@ -16,16 +16,19 @@ const HomePage = () => {
                     </ul>
                 </div>
                 <div className="home" >
-                    
-                    <h1> 
-                        <span>OPTIMIZANDO</span> ELÉTRICAS <br></br> CORPORATIVAS
-                    </h1>
+                    <div className='text-home' >
+                        <h1>
+                            <span>OPTIMIZANDO</span> ELÉTRICAS<br/> CORPORATIVAS
+                        </h1>
 
-                    <h2>
-                        ELETRICISTAS ESPECIALIZADOS <br></br> EM <span>SOLUÇÕES CORPORATIVAS</span>
-                    </h2>
+                        <h2>
+                            ELETRICISTAS ESPECIALIZADOS <br/> EM <span>SOLUÇÕES CORPORATIVAS</span>
+                        </h2>
+                        <button className='botao-home' > Faça seu Orçamento </button>
+                    </div>
 
-                    
+
+
                 </div>
 
                 <div className="clientbar">
@@ -33,7 +36,7 @@ const HomePage = () => {
                 </div>
 
             </div>
-            
+
 
         </>
     )

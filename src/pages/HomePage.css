@@ -13,23 +13,23 @@
     bottom: 2rem;
 }
 
-    @media(max-width: 768px) {
-        
-        .navitens {
-            width: 70%;
-            height: 3rem;
-            font-size: 0.5em;
-        }
-    }
+@media(max-width: 768px) {
 
-    @media(max-width: 480px) {
-        
-        .navitens {
-            width: 70%;
-            height: 1.8rem;
-            bottom: 1.3rem;
-        }
+    .navitens {
+        width: 70%;
+        height: 3rem;
+        font-size: 0.5em;
     }
+}
+
+@media(max-width: 480px) {
+
+    .navitens {
+        width: 75%;
+        height: 2.5rem;
+        bottom: 3rem;
+    }
+}
 
 
 .containerLogo {
@@ -39,94 +39,109 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 0 1.4rem 0;
+    padding: 0 0 2rem 0;
+}
 
-    
+@media(max-width:468px) {
+    .containerLogo {
+        padding: 0 0 3rem 0;
+    }
 }
 
 .navbar-itens {
     text-decoration: none;
     padding: 0 2.5rem 0 2.5rem;
-    font-size:1em ;
+    font-size: 1em;
     color: rgba(248, 248, 248, 0.97);
     font-family: Hind;
 
 }
 
-@media(max-width: 770px)
-{
+@media(max-width: 770px) {
     .navbar-itens {
         padding: 0 0.5em 0 0.5em;
         font-size: 1.5em;
     }
 }
 
-@media(max-width: 385px)
-{
+@media(max-width: 385px) {
     .navbar-itens {
         padding: 0 0.5em 0 0.5em;
-        font-size: 1em;
+        font-size: 1.3em;
     }
 }
 
 .logonav {
     width: 10rem;
     height: 3rem;
-    margin-bottom: 12px;
 
+    @media(max-width: 468px) {
+        width: 5.5rem;
+        height: 2rem;
+    }
 }
+
 
 .containerhome {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .home {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     width: 100%;
-    position: relative;
-    bottom: 4rem;
-}
-
-    @media(max-width: 768px) {
-        
-        .home {
-            bottom: 3rem;
-        }
-    }
-
-    @media(max-width: 480px) {
-
-        .home {
-            bottom: 2rem;
-        }
-    }
-
-
-body {
+    height: 40rem;
     background-image: url("../../public/images/img-e-sombra.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: 4rem;
+    @media (max-width:468px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+} 
 
-}
-
-@media(max-width: 800px){
-
-    body {
-        background-image: url("../../public/images/img-home-celular.png");
+.text-home {
+    grid-area: 3 / 1 / 4 / 2;
+    line-height: 5em;
+    margin: 0 0 0 4rem;
+    @media (max-width:768px){
+        line-height: 4em;
+    }
+    @media (max-width:468px){
+        text-align: center;
+        margin: 0;
+        padding: 1.2rem;
     }
 }
 
+
 .home h1 {
-    position: absolute;
-    margin-top: 10vw;
-    margin-left: 8.438rem;
     color: white;
     font-family: 'Hind', sans-serif;
-    font-size: clamp(1.5vw, 3vw, 3vw); 
+    font-size: 3.5em;
+    margin: 0 0 0.7rem 0;
+    @media(max-width:768px){
+        font-size: 2.5rem;
+        line-height: 1.2em;
+    }
+    @media (max-width:468px){ 
+        font-size:2.5em;
+        margin: 0 0 0.5rem 0 ;
+    }
 }
 
 .home h1 span {
@@ -134,47 +149,48 @@ body {
 }
 
 
-@media(max-width: 800px){
-
-    .home h1 {
-        font-size: 7vw;
-        margin-left: 7vw;
-    }
-
-    
-
-}
-
 .home h2 {
-    position: absolute;
-    margin-top: 22vw;
-    margin-left: 8.438rem;
     color: white;
     font-family: 'Hind', sans-serif;
-    font-size: clamp(1vw, 2vw, 3vw); 
-
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0 0 0.7rem 0;
+    @media (max-width:468px){
+        font-size: 1em;
+        margin: 0 0 0.5rem 0;
+    }
 }
 
 .home h2 span {
     color: #FFB800;
 }
 
-@media(max-width: 800px){
-    
-    .home h2 {
-        font-size: 5vw;
-        margin-top: 40vw;
-        margin-left: 7vw;
-    }
+.botao-home {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 12px;
+    background: #88142C;
+    color: #FFF;
+    text-align: center;
+    font-family: Hind;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: box-shadow 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
-
-
+.botao-home:hover{
+    box-shadow: 0px 2px 10px rgba(255, 255, 255);
+    background: #9E1C10;
+    transform: scale(1.1);
+}
 
 .clientbar {
     position: relative;
     width: 100%;
     height: 11.063rem;
     box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25) inset, 0px -6px 6px 0px rgba(0, 0, 0, 0.25) inset;
-    background-image: linear-gradient(180deg, #FFB800 0%, #FED132 100%);;
-    top: 34.375rem;
+    background-image: linear-gradient(180deg, #FFB800 0%, #FED132 100%);
+    bottom: 5rem;
+
 }
