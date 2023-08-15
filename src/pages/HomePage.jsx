@@ -1,23 +1,40 @@
 import React from 'react'
 import "./HomePage.css"
 
+import { useState } from 'react';
+import "./HomePage.css";
+
 const HomePage = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <>
             <div className="containerhome">
-                <div className='containerLogo on' > 
-                    <img className="logonav" src="./images/logoBrancaJPG.jpg" alt="Logo clikar" />
+                <div className={`containerLogo ${menuOpen ? 'on' : ''}`}>
+                    <img className={`logonav ${menuOpen ? 'logonavhidden' : ''}`} src="./images/logoBrancaJPG.jpg" alt="Logo clikar" />
+
+                    <div onClick={toggleMobileMenu} className='menu-toggle'>
+                        <div className='one'></div>
+                        <div className='two'></div>
+                        <div className='three'></div>
+                    </div>
+
+                    <div className={`navitens-mobile ${menuOpen ? '' : 'navitens-mobilehidden'}`}>
+                        <ul>
+                            <a className="navbar-itens" href="">HOME</a>
+                            <a className="navbar-itens" href="">SOBRE NÓS</a>
+                            <a className="navbar-itens" href="">SERVIÇOS</a>
+                            <a className="navbar-itens" href="">CLIENTES</a>
+                            <a className="navbar-itens" href="">CONTATO</a>
+                        </ul>
+                    </div>
                     
-                        <div className='menu-toggle'>
-                            <div className='one'></div>
-                            <div className='two'></div>
-                            <div className='three'></div>
-                        </div>
-                    
-                </div>
-                
                 <div className="navitens">
-                    <ul> 
+                    <ul>
                         <a className="navbar-itens" href="">Home</a>
                         <a className="navbar-itens" href="">Sobre Nós</a>
                         <a className="navbar-itens" href="">Serviços</a>
@@ -25,6 +42,8 @@ const HomePage = () => {
                         <a className="navbar-itens" href="">Contato</a>
                     </ul>
                 </div>
+                </div>
+
                 <div className="home" >
                     <div className='container-text-home' >
                         <div className='text-home' >
