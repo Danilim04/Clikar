@@ -146,6 +146,10 @@ html {
 
 @media(max-width:425px) {
 
+    html {
+        font-size: 30%;
+    }
+
     .home {
         bottom: 5rem;
     }
@@ -171,9 +175,29 @@ html {
 
     /*fullscreen*/
 
-    
+    .containerLogo.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 10;
+
+        background-color: #FECA32;
+    }
+
+    .logonav {
+        display: none;
+    }
+
+    .navitens {
+        background: #FECA32;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+    }
 }
 
-@media(max-width:468px) {
-    
-}

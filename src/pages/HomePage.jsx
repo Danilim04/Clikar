@@ -5,13 +5,15 @@ const HomePage = () => {
     return (
         <>
             <div className="containerhome">
-                <div className='containerLogo' > 
-                    <img className="logonav" src="./images/logoBrancaJPG.jpg" alt="Logo clikar" /> 
-                    <div className='menu-toggle'>
-                        <div className='one'></div>
-                        <div className='two'></div>
-                        <div className='three'></div>
-                    </div>
+                <div className='containerLogo on' > 
+                    <img className="logonav" src="./images/logoBrancaJPG.jpg" alt="Logo clikar" />
+                    
+                        <div className='menu-toggle'>
+                            <div className='one'></div>
+                            <div className='two'></div>
+                            <div className='three'></div>
+                        </div>
+                    
                 </div>
                 
                 <div className="navitens">
