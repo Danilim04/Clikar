@@ -2,7 +2,6 @@ import React from 'react'
 import "./HomePage.css"
 
 import { useState } from 'react';
-import "./HomePage.css";
 
 const HomePage = () => {
     const [menuOpen, setMenuOpen] = useState(false);
