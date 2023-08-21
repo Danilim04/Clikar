@@ -149,8 +149,6 @@ html {
 
 @media(max-width:768px) {
 
-
-
     html {
         font-size: 40%;
     }
@@ -189,14 +187,14 @@ html {
     }
 
     .text-home h1 {
-        font-size: 6em;
-        line-height: 1.2em;
+        font-size: 6rem;
+        line-height: 7rem;
         font-weight: 900;
     }
 
     .text-home h2 {
-        font-size: 3em;
-        line-height: 1.5em;
+        font-size: 3rem;
+        line-height: 3rem;
         font-weight: 700;
     }
 
@@ -218,7 +216,7 @@ html {
     }
 
     .containerLogo {
-        height: 15rem;
+        height: 10rem;
         padding: 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -229,17 +227,17 @@ html {
     }
 
     .botao-home {
-        width: 15em;
-        height: 2.5em;
-        font-size: 3em;
+        width: 35rem;
+        height: 8rem;
+        font-size: 2.5rem;
     }
 
     .menu-toggle .one,
     .two,
     .three {
         background-color: #0459BC;
-        height: 4px;
-        width: 100%;
+        height: 3px;
+        width: 75%;
         margin: 3.5px auto;
         transition-duration: 0.3s;
     }
@@ -293,6 +291,8 @@ html {
 
     .logonav {
         grid-area: 1 / 2 / 2 / 3;
+        width: 15rem;
+        height: 5rem;
     }
 
     .logonavhidden {
