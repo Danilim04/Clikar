@@ -20,7 +20,7 @@ const HomePage = () => {
                             <div className='two'></div>
                             <div className='three'></div>
                         </div>
-                    <div className={`navitens-mobile ${menuOpen ? '' : 'navitens-mobilehidden'}`}>
+                    <div className={` ${menuOpen ? 'navitens-mobile' : 'navitens'}`}>
                         <ul>
                             <a className="navbar-itens" href="">HOME</a>
                             <a className="navbar-itens" href="">SOBRE NÓS</a>
@@ -30,7 +30,7 @@ const HomePage = () => {
                         </ul>
                     </div>
 
-                    <div className="navitens">
+                    {/* <div className="navitens">
                         <ul>
                             <a className="navbar-itens" href="">HOME</a>
                             <a className="navbar-itens" href="">SOBRE NÓS</a>
@@ -38,7 +38,7 @@ const HomePage = () => {
                             <a className="navbar-itens" href="">CLIENTES</a>
                             <a className="navbar-itens" href="">CONTATO</a>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="home" >
